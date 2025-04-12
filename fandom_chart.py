@@ -1,11 +1,7 @@
 import AO3
 import plotly.express as px
-import requests
+from http_status import STATUS_OK, STATUS_INTERNAL_ERROR
 
-# Получаем коды статусов из requests
-STATUS_OK = requests.codes.ok  # 200
-STATUS_FORBIDDEN = requests.codes.forbidden  # 403
-STATUS_INTERNAL_ERROR = requests.codes.internal_server_error  # 500
 
 AO3_BASE_URL = "https://archiveofourown.org/tags/"
 
