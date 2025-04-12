@@ -1,11 +1,10 @@
-# http_status.py
-import requests
+from http import HTTPStatus
 
-STATUS_OK = requests.codes.ok
-STATUS_FORBIDDEN = requests.codes.forbidden
-STATUS_NOT_FOUND = requests.codes.not_found
-STATUS_INTERNAL_ERROR = requests.codes.internal_server_error
-STATUS_UNAVAILABLE = requests.codes.service_unavailable
+STATUS_OK = HTTPStatus.OK
+STATUS_FORBIDDEN = HTTPStatus.FORBIDDEN
+STATUS_NOT_FOUND = HTTPStatus.NOT_FOUND
+STATUS_INTERNAL_ERROR = HTTPStatus.INTERNAL_SERVER_ERROR
+STATUS_UNAVAILABLE = HTTPStatus.SERVICE_UNAVAILABLE
 
 STATUS_DESCRIPTIONS = {
     STATUS_OK: "Успешный запрос",
